@@ -1,19 +1,24 @@
 import Services from "@/components/Cards/ServiceComponente";
 import { AccordionDemo } from "@/components/QuestionsComponent";
 import InfiniteSliderBasic from "@/components/SectionInfinity/MotionInfinity";
+import HeroSection from "@/components/Sections/HeroSection";
+import ServicesGrid from "@/components/Sections/ServicesGrid";
+import MidCTA from "@/components/Sections/MidCTA";
+import WhyUsGrid from "@/components/Sections/WhyUsGrid";
+import FinalStats from "@/components/Sections/FinalStats";
+import ContactSection from "@/components/Sections/ContactSection";
+import Footer from "@/components/Sections/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-white mt-[60px]">
-      <div className="bg-bg-personal1 p-5">
-        <Services/>
-      </div>
-      <div className="p-5">
-        <InfiniteSliderBasic/>
-      </div>
-      <div className="p-5 mx-auto">
-        <AccordionDemo/>
-      </div>
-    </div>
+ <main className="overflow-x-hidden">
+      <HeroSection />
+      <ServicesGrid />
+      <MidCTA />
+      <WhyUsGrid />
+      <FinalStats />
+      <ContactSection />
+      <Footer />
+    </main>
   );
 }
